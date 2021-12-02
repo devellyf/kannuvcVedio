@@ -52,7 +52,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="stream":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="start"),
+                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
@@ -68,7 +68,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="endst":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="start"),
+                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
