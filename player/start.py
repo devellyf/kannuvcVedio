@@ -37,7 +37,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Sᴛʀᴇᴀᴍ", callback_data="stream"),
-                InlineKeyboardButton ("Eɴᴅ Sᴛʀᴇᴀᴍ" callback_data="endst"),
+                InlineKeyboardButton ("Eɴᴅ Sᴛʀᴇᴀᴍ", callback_data="endst"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
