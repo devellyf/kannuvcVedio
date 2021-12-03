@@ -7,4 +7,4 @@ ABOUT_TEXT = '**COMMANDS** \n\n`/stream` **Reply to Video or File That You Want 
 ENDST_TEXT =f"**COMMANDS** \n\n`/stopstream` **Stop the stream.**"
 PASTE_TEXT = 'HELLO HUYS'
 VSONG_TEXT = '"HELLP ME GUYS'
-THPK_TEXT =f"his g"
+TGPK_TEXT =f"his g"
