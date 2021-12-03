@@ -94,7 +94,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
 
-   elif query.data=="paste":
+    elif query.data=="paste":
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
