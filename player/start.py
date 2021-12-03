@@ -44,7 +44,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton ("Pᴀꜱᴛᴇ", callback_data="paste"),
             ],
             [
-               InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
+               InlineKeyboardButton("Tᴇʟᴇɢʀᴀᴘʜ ✮ Iɴꜰᴏ", callback_data="tgph"),
+            ],
+            [
+               InlineKeyboardButton("╰✰ Cʜᴀɴɴᴇʟ", callback_data="vsong"),
+               InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", callback_data="paste"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -56,7 +60,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
 
-    elif query.data=="stream":
+    elif query.data=="tgph":
+        buttons = [
+            [
+                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
+            ]
+            ]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        try:
+            await query.edit_message_text(
+                TGPH_TEXT,
+                reply_markup=reply_markup
+            )
+        except MessageNotModified:
+            pass
+    
+   elif query.data=="stream":
         buttons = [
             [
                 InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
@@ -71,8 +91,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except MessageNotModified:
             pass
-
-    elif query.data=="paste":
+    
+   elif query.data=="paste":
         buttons = [
             [
                 InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
