@@ -10,3 +10,4 @@ wget
 telegraph
 requests
 asyncio
+youtube_search
