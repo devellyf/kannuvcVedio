@@ -63,8 +63,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="tgph":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -75,12 +76,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except MessageNotModified:
             pass
-    
-   elif query.data=="stream":
+
+    elif query.data=="stream":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,12 +93,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except MessageNotModified:
             pass
-    
+
    elif query.data=="paste":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -111,8 +114,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="vsong":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -127,8 +131,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="endst":
         buttons = [
             [
-                InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
