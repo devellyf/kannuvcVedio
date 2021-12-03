@@ -39,7 +39,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton("Sᴛʀᴇᴀᴍ", callback_data="stream"),
-                InlineKeyboardButton ("Eɴᴅ Sᴛʀᴇᴀᴍ", callback_data="endst"),
+                InlineKeyboardButton ("Eɴᴅ Sᴛʀᴇᴀᴍ", callback_data="info"),
             ],
             [
                 InlineKeyboardButton("Vɪᴅᴇᴏ Sᴏɴɢ", callback_data="vsong"),
@@ -127,7 +127,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
 
-    elif query.data=="endst":
+    elif query.data=="info":
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
@@ -137,7 +137,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                ENDST_TEXT,
+                INFO_TEXT,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
