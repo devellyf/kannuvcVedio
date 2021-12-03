@@ -48,6 +48,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],
             [
                InlineKeyboardButton("╰✰ Cʜᴀɴɴᴇʟ", callback_data="vsong"),
+               InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ ✰╮", callback_data="paste"),
             ]
             ]
@@ -64,14 +65,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                TGPH_TEXT,
+                TGPK_TEXT,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
@@ -81,7 +81,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
@@ -98,7 +97,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
@@ -115,7 +113,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
@@ -132,7 +129,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"),
                 InlineKeyboardButton("Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ]
             ]
