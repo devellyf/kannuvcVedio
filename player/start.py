@@ -137,7 +137,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         try:
             await query.edit_message_text(
-                DEVS_TEXT,
+                ENDST_TEXT,
                 reply_markup=reply_markup
             )
         except MessageNotModified:
