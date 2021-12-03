@@ -71,7 +71,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except MessageNotModified:
             pass
-    
+
     elif query.data=="paste":
         buttons = [
             [
@@ -87,7 +87,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except MessageNotModified:
             pass
-   
+
     elif query.data=="vsong":
         buttons = [
             [
@@ -103,7 +103,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except MessageNotModified:
             pass
-   
+
     elif query.data=="endst":
         buttons = [
             [
