@@ -6,4 +6,5 @@ START_TEXT = '👋 `Hey My Name Is` **@{ASSISTANT_NAME}** \n\n`Lets Enjoy Cinema
 ABOUT_TEXT = '**COMMANDS** \n\n`/stream` **Reply to Video or File That You Want To stream In Vc.** \n\n`/stream` **try /stream [yt link]..**'
 DEVS_TEXT =f"**COMMANDS** \n\n`/stopstream` **Stop the stream.**"
 PASTE_TEXT = 'HELLO HUYS'
-VSONG_TEXT =f"HELLP ME GUYS"
+VSONG_TEXT = '"HELLP ME GUYS'
+THPH_TEXT =f"his g"
