@@ -25,11 +25,11 @@ async def start(client, message):
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
    if message.chat.type == 'private':
-      m=await message.reply_photo(photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", caption=START_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
-      await message.reply_text(
-          START_TEXT,
-          reply_markup=reply_markup
-       )
+      m=await message.reply_photo(
+                                  photo="https://telegra.ph/file/1ca2830c014aa6b8b62e7.jpg", 
+                                  caption=START_TEXT.format(message.from_user.first_name, message.from_user.id),
+                                  reply_markup=reply_markup
+      )      
    else:
       await message.reply(f"**👋 Hey VcVideoPlayer is Alive! ✨**")
 
