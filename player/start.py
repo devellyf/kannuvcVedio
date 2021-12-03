@@ -72,7 +72,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
     
-   elif query.data=="paste":
+    elif query.data=="paste":
         buttons = [
             [
                 InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
@@ -88,7 +88,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
    
-   elif query.data=="vsong":
+    elif query.data=="vsong":
         buttons = [
             [
                 InlineKeyboardButton("╰✰ Bᴀᴄᴋ", callback_data="help"),
