@@ -1,6 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from config import SOURCE_CODE, ASSISTANT_NAME, SUPPORT_GROUP, UPDATES_CHANNEL, BOT_USERNAME
+from config import SOURCE_CODE, SUPPORT_GROUP, UPDATES_CHANNEL, BOT_USERNAME
+from config import ASSISTANT_NAME as op
 from plugins.tr import *
 from plugins.tr import TGPK_TEXT, VSONG_TEXT, PASTE_TEXT, INFO_TEXT, STREAM_TEXT, START_TEXT, HELP_TEXT
 from pyrogram.errors import MessageNotModified
@@ -31,7 +32,7 @@ async def start(client, message):
           reply_markup=reply_markup
        )
    else:
-      await message.reply(f"**👋 Hey @{ASSISTANT_NAME} is Alive! ✨**")
+      await message.reply(f"**👋 Hey @{op} is Alive! ✨**")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
